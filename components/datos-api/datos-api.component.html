@@ -1,0 +1,27 @@
+<p>datos-api works!</p>
+
+    <div>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>
+id
+                    </th>
+                    <th>
+                        title
+                                            </th>
+                </tr>
+            </thead>
+            <tbody>
+                @for (item of datosList; track $index) {
+                   
+                <tr>
+                 <th> {{ item.id }}</th>
+                 <th> {{ item.title }}</th>
+                
+                </tr>
+            }
+            </tbody>
+
+        </table>
+    </div>
